@@ -62,6 +62,14 @@ public class GameManager {
             } else {
                 fighter.useSkill();
             }
+
+            //スライムの攻撃を追加
+
+            slime.attack(fighter);
+            if (fighter.isDead()) {
+                System.out.println("ゲームオーバー。ゲームはここまでです。");
+                break;
+            }
             
 
         }
